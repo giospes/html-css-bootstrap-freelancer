@@ -14,6 +14,6 @@ a, span{
     display: inline-block;
 }
 
-form label{
+form input{
     display: block;
 }
