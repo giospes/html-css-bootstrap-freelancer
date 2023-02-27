@@ -13,3 +13,7 @@ ul{
 a, span{
     display: inline-block;
 }
+
+form label{
+    display: block;
+}
