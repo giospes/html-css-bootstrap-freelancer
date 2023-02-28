@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container border border-primary ">
-        <nav class="row justify-content-between align-items-center border border-primary">
+    <nav class=" border border-primary">
+        <div class="container px-xl-5 mt-0 mx-auto row justify-content-between align-items-center border border-primary">
             <h2 class="col-4 border border-primary"><a href="#">Start Bootstrap</a></h2>
             <i class="fa-solid fa-bars col-1 border border-primary d-sm-none"></i>
             <ul class="d-none d-sm-flex justify-content-between col-4">
@@ -19,7 +19,9 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+    <div class="container px-xl-5 border border-primary ">
         <header class="d-flex flex-column justify-content-center align-items-center" >
             <img class="w-50 mw-200px "src="./img/avatar.svg" alt="">
             <h1>Start Bootstrap</h1>
@@ -82,7 +84,37 @@
                     <button type="submit" class="btn btn-success mt-3">Send</button>
                 </form>
             </section>
+            <section id="location" class="d-flex flex-column align-items-center flex-md-row py-4 px-5">
+                <div id="location" class="col-md-4 text-center mb-3">
+                    <h3 class="">Location</3>
+                    <small>2215 Lorem ipsum dolor sit amet.</small>
+                </div>
+                <div id="web" class="col-md-4 text-center mb-3">
+                    <h4>around the web</h4>
+                    <ul class="d-flex flex-nowrap justify-content-center align-items-center">
+                        <li class="gs-icon-container">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </li>
+                        <li class="gs-icon-container">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </li>
+                        <li class="gs-icon-container">
+                            <i class="fa-brands fa-instagram"></i>
+                        </li>
+                        <li class="gs-icon-container">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div id="freelance" class="col-md-4 text-center mb-3">
+                    <h3>About the freelance</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, accusantium!</p>
+                </div>
+            </section>
         </main>
+        <footer class="text-center pt-3">
+            <p>Copyright&copy; Lorem ipsum dolor sit</p>
+        </footer>
     </div>
     
 
