@@ -10,17 +10,43 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav class=" border border-primary">
-        <div class="container px-xl-5 mt-0 mx-auto row justify-content-between align-items-center border border-primary">
-            <h2 class="col-4 border border-primary"><a href="#">Start Bootstrap</a></h2>
-            <i class="fa-solid fa-bars col-1 border border-primary d-sm-none"></i>
-            <ul class="d-none d-sm-flex justify-content-between col-4">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+    <nav class="navbar fixed-top">
+        <div class="container px-4">
+            <h3>Start Bootstrap</h3>
+            <div id="xsm-nav-bar" class="d-sm-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Start Bootstrap</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="m-nav-bar" class="d-none d-sm-block">
+                <ul class="d-none d-sm-flex justify-content-between col-4">
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
+
     <div class="container px-xl-5 border border-primary ">
         <header class="d-flex flex-column justify-content-center align-items-center" >
             <img class="w-50 mw-200px "src="./img/avatar.svg" alt="">
