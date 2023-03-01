@@ -12,8 +12,9 @@ form input{
     display: block;
 }
 
-nav, .gs-offcanvas-b-bg{
+nav, .gs-offcanvas-b-bg, #location{
     background-color: #394a5c ;
+    color: white;
 }
 .gs-button-off{
     filter: invert(1);
@@ -97,3 +98,103 @@ header img{
     right: 0;
 }
 
+.gs-layover{
+    position: relative;
+}
+
+.overlay-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: green;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.gs-layover i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    font-size: 5rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 1.5s ;
+}
+
+.gs-layover:hover i{
+    opacity: 1;
+}
+
+.overlay-bg:hover{
+    opacity: 1 ;
+}
+
+
+
+#about , #contact{
+    padding: 1rem 8rem;
+}
+
+
+#input-message{
+    height: 150px; 
+}
+
+.gs-icon-container{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: .5rem;
+}
+
+footer{
+    background-color: rgb(44, 62, 80) ;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 570px){
+    #about , #contact{
+        padding: 1rem 4rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #about , #contact{
+        padding: 1rem 2rem;
+    }
+}
