@@ -11,3 +11,14 @@ a, span{
 form input{
     display: block;
 }
+
+nav, .gs-offcanvas-b-bg{
+    background-color: #394a5c ;
+}
+.gs-button-off{
+    filter: invert(1);
+}
+
+.gs-offcanvas-h-bg{
+    background-color: #2c3e50 ;
+}
